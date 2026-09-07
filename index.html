@@ -1,0 +1,1114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Gajanan Maharaj Jyotish Karyalay - Astrology, Kundali and Dharmik Karya services by Ravindra Vasant Pathakk.">
+
+    <meta name="keywords"
+          content="Astrology, Jyotish, Kundali, Horoscope, Satyanarayana Puja, Dharmik Karya, Ravindra Vasant Pathakk">
+
+    <meta name="author"
+          content="Gajanan Maharaj Jyotish Karyalay">
+
+    <title>Gajanan Maharaj Jyotish Karyalay | Astrology & Dharmik Karya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: #fffaf0;
+            color: #3d2415;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        header {
+            background: #5a160f;
+            color: #fff8e7;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-symbol {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #d4a72c;
+            color: #5a160f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .brand-text h1 {
+            font-size: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .brand-text p {
+            font-size: 12px;
+            color: #f3d98b;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 22px;
+        }
+
+        nav a {
+            color: #fff8e7;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f2c94c;
+        }
+
+        .language-selector {
+            display: flex;
+            gap: 5px;
+        }
+
+        .language-selector button {
+            border: 1px solid #d4a72c;
+            background: transparent;
+            color: #fff8e7;
+            padding: 5px 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .language-selector button:hover {
+            background: #d4a72c;
+            color: #5a160f;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+
+            background:
+                radial-gradient(circle at center,
+                rgba(212, 167, 44, 0.18),
+                transparent 35%),
+                linear-gradient(
+                135deg,
+                #fff8e7 0%,
+                #f8e6c2 50%,
+                #fffaf0 100%
+                );
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "✦";
+            position: absolute;
+            color: rgba(170, 118, 25, 0.18);
+            font-size: 180px;
+        }
+
+        .hero::before {
+            left: 5%;
+            top: 15%;
+        }
+
+        .hero::after {
+            right: 5%;
+            bottom: 10%;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .om-symbol {
+            font-size: 58px;
+            color: #9c1c13;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: clamp(34px, 6vw, 62px);
+            color: #65170f;
+            margin-bottom: 15px;
+            line-height: 1.15;
+        }
+
+        .hero h3 {
+            color: #a26a10;
+            font-size: clamp(18px, 3vw, 28px);
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 17px;
+            color: #604333;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #8e1b12;
+            color: white;
+            border: 2px solid #8e1b12;
+        }
+
+        .btn-primary:hover {
+            background: #68130d;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #7a190f;
+            border: 2px solid #a26a10;
+        }
+
+        .btn-secondary:hover {
+            background: #a26a10;
+            color: white;
+        }
+
+        /* =========================
+           GENERAL SECTIONS
+        ========================= */
+
+        section {
+            padding: 75px 20px;
+        }
+
+        .section-container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading span {
+            color: #a26a10;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+            color: #65170f;
+            font-size: 38px;
+            margin-top: 8px;
+        }
+
+        .section-heading p {
+            max-width: 650px;
+            margin: 12px auto 0;
+            color: #6c5548;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: #fffaf0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .about-card {
+            min-height: 330px;
+            border-radius: 15px;
+            background: linear-gradient(145deg, #6c170f, #9c2517);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(91, 27, 15, 0.2);
+        }
+
+        .about-card .symbol {
+            font-size: 80px;
+            margin-bottom: 15px;
+            color: #f3d98b;
+        }
+
+        .about-card h3 {
+            font-size: 25px;
+            color: #fff2c8;
+        }
+
+        .about-text h3 {
+            color: #8e1b12;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: #624b3c;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: #f8ead0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: #fffdf7;
+            border: 1px solid #ead6ac;
+            border-radius: 12px;
+            padding: 28px 22px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(91, 38, 17, 0.12);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #7d180f;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .service-card p {
+            color: #705a4a;
+            font-size: 15px;
+        }
+
+        /* =========================
+           CONSULTATION
+        ========================= */
+
+        .consultation {
+            background: linear-gradient(135deg, #65170f, #8f2014);
+            color: white;
+            text-align: center;
+        }
+
+        .consultation .section-heading span {
+            color: #f3d98b;
+        }
+
+        .consultation .section-heading h2 {
+            color: #fff2c8;
+        }
+
+        .consultation .section-heading p {
+            color: #f7dfbd;
+        }
+
+        .pricing-box {
+            max-width: 550px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.09);
+            border: 1px solid rgba(243, 217, 139, 0.5);
+            border-radius: 15px;
+            padding: 35px;
+        }
+
+        .free-time {
+            font-size: 42px;
+            color: #f3d98b;
+            font-weight: bold;
+        }
+
+        .pricing-box h3 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .pricing-box p {
+            color: #f7dfbd;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 28px;
+            color: #f3d98b;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        /* =========================
+           DHARMIK KARYA
+        ========================= */
+
+        .dharmik {
+            background: #fffaf0;
+        }
+
+        .dharmik-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .dharmik-card {
+            border: 1px solid #e5ce9c;
+            border-radius: 12px;
+            padding: 30px;
+            background: #fffdf7;
+        }
+
+        .dharmik-card h3 {
+            color: #7d180f;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .dharmik-card p {
+            color: #6c5548;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: #f8ead0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-card {
+            background: #fffdf7;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #ead6ac;
+        }
+
+        .contact-card h3 {
+            color: #7d180f;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #3d0d09;
+            color: #f5dfb4;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer h3 {
+            color: #f3d98b;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 12px 15px;
+            }
+
+            .brand-text h1 {
+                font-size: 16px;
+            }
+
+            .brand-text p {
+                font-size: 10px;
+            }
+
+            .brand-symbol {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+
+            .hero {
+                min-height: 570px;
+                padding: 60px 18px;
+            }
+
+            .hero h2 {
+                font-size: 38px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            section {
+                padding: 55px 17px;
+            }
+
+            .section-heading h2 {
+                font-size: 31px;
+            }
+
+            .service-grid,
+            .dharmik-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-box {
+                padding: 25px 18px;
+            }
+
+            .free-time {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="brand">
+
+                <div class="brand-symbol">
+                    ॐ
+                </div>
+
+                <div class="brand-text">
+                    <h1>Gajanan Maharaj Jyotish Karyalay</h1>
+                    <p>Astrology • Kundali • Dharmik Karya</p>
+                </div>
+
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#consultation">Consultation</a></li>
+                    <li><a href="#dharmik">Dharmik Karya</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="language-selector">
+                <button>EN</button>
+                <button>मराठी</button>
+                <button>हिन्दी</button>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="om-symbol">ॐ</div>
+
+            <h2>
+                Gajanan Maharaj<br>
+                Jyotish Karyalay
+            </h2>
+
+            <h3>
+                Astrology • Kundali • Dharmik Karya
+            </h3>
+
+            <p>
+                Traditional guidance for life's important questions,
+                Kundali preparation and analysis, and Dharmik Karya
+                services under the guidance of
+                <strong>Ravindra Vasant Pathakk</strong>.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#consultation" class="btn btn-primary">
+                    Ask Astrologer
+                </a>
+
+                <a href="#services" class="btn btn-secondary">
+                    Explore Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>About Us</span>
+
+                <h2>Meet Our Astrologer</h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-card">
+
+                    <div>
+
+                        <div class="symbol">ॐ</div>
+
+                        <h3>
+                            RAVINDRA<br>
+                            VASANT PATHAKK
+                        </h3>
+
+                        <p>
+                            Astrologer
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <h3>
+                        Guidance with Tradition & Care
+                    </h3>
+
+                    <p>
+                        Welcome to Gajanan Maharaj Jyotish Karyalay.
+                        We provide astrology-related consultation,
+                        Kundali preparation and analysis, and traditional
+                        Dharmik Karya services.
+                    </p>
+
+                    <p>
+                        Our aim is to provide respectful and personalized
+                        guidance for individuals and families regarding
+                        their questions and concerns.
+                    </p>
+
+                    <p>
+                        Every consultation is approached with attention,
+                        traditional knowledge and respect for the individual.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ASTROLOGY SERVICES
+    ========================= -->
+
+    <section class="services" id="services">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>Our Services</span>
+
+                <h2>Astrology & Kundali Services</h2>
+
+                <p>
+                    Explore our consultation and Kundali-related services.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">🔮</div>
+
+                    <h3>Astrology Consultation</h3>
+
+                    <p>
+                        Discuss your questions and receive
+                        personalized astrology consultation.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">📜</div>
+
+                    <h3>Kundali Making</h3>
+
+                    <p>
+                        Request preparation of your Kundali
+                        using your birth details.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">⭐</div>
+
+                    <h3>Kundali Analysis</h3>
+
+                    <p>
+                        Consultation and explanation based
+                        on your Kundali.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">💍</div>
+
+                    <h3>Marriage Consultation</h3>
+
+                    <p>
+                        Astrology-based consultation for
+                        marriage-related questions.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">🎓</div>
+
+                    <h3>Education Guidance</h3>
+
+                    <p>
+                        Discuss education-related questions
+                        through astrology consultation.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">💼</div>
+
+                    <h3>Career & Business</h3>
+
+                    <p>
+                        Consultation for career and
+                        business-related questions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ASK ASTROLOGER
+    ========================= -->
+
+    <section class="consultation" id="consultation">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>Online Consultation</span>
+
+                <h2>Ask the Astrologer</h2>
+
+                <p>
+                    Start your consultation online.
+                    Your first two minutes are free.
+                </p>
+
+            </div>
+
+
+            <div class="pricing-box">
+
+                <h3>
+                    Start Your Consultation
+                </h3>
+
+                <div class="free-time">
+                    2 MINUTES FREE
+                </div>
+
+                <p>
+                    Get your first 2 minutes of consultation
+                    completely free.
+                </p>
+
+                <div class="price">
+                    ₹25 / 5 MIN 30 SEC
+                </div>
+
+                <p>
+                    After the free period, continue the consultation
+                    for ₹25 for every additional 5 minutes 30 seconds.
+                </p>
+
+                <br>
+
+                <a href="#" class="btn btn-primary"
+                   onclick="startConsultation(event)">
+                    Start Free Consultation
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DHARMIK KARYA
+    ========================= -->
+
+    <section class="dharmik" id="dharmik">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>Dharmik Karya</span>
+
+                <h2>Traditional Religious Services</h2>
+
+                <p>
+                    Religious and Dharmik Karya services
+                    according to customer requirements.
+                </p>
+
+            </div>
+
+
+            <div class="dharmik-grid">
+
+
+                <div class="dharmik-card">
+
+                    <h3>🛕 Satyanarayana Puja</h3>
+
+                    <p>
+                        Traditional Satyanarayana Puja services
+                        for families and special occasions.
+                    </p>
+
+                    <br>
+
+                    <a href="#contact"
+                       class="btn btn-secondary">
+                        Enquire Now
+                    </a>
+
+                </div>
+
+
+                <div class="dharmik-card">
+
+                    <h3>🙏 Other Dharmik Karya</h3>
+
+                    <p>
+                        Other traditional religious ceremonies
+                        and Dharmik Karya as per requirements.
+                    </p>
+
+                    <br>
+
+                    <a href="#contact"
+                       class="btn btn-secondary">
+                        Enquire Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <span>Get in Touch</span>
+
+                <h2>Contact Gajanan Maharaj Jyotish Karyalay</h2>
+
+                <p>
+                    Contact us for astrology consultation,
+                    Kundali services and Dharmik Karya.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-card">
+
+                    <h3>📞 Contact Information</h3>
+
+                    <div class="contact-item">
+                        <strong>Astrologer:</strong><br>
+                        Ravindra Vasant Pathakk
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>Phone:</strong><br>
+                        Add your father's phone number
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>WhatsApp:</strong><br>
+                        Add WhatsApp number
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>Location:</strong><br>
+                        Add business address
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <h3>🙏 Consultation</h3>
+
+                    <p>
+                        For consultation, Kundali preparation,
+                        Kundali analysis or Dharmik Karya,
+                        contact us to discuss your requirements.
+                    </p>
+
+                    <br>
+
+                    <a href="#consultation"
+                       class="btn btn-primary">
+                        Ask Astrologer
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <h3>
+            Gajanan Maharaj Jyotish Karyalay
+        </h3>
+
+        <p>
+            Astrology • Kundali • Dharmik Karya
+        </p>
+
+        <p>
+            Astrologer: Ravindra Vasant Pathakk
+        </p>
+
+        <p>
+            © 2026 Gajanan Maharaj Jyotish Karyalay.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         TEMPORARY JAVASCRIPT
+    ========================= -->
+
+    <script>
+
+        function startConsultation(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Online consultation system will be connected in the next development step."
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
+
